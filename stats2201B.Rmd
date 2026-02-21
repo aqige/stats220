@@ -1,0 +1,172 @@
+---
+title: "stats2201B"
+output: html_document
+date: "2026-02-20"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R 
+```{r}
+library(magick)
+
+# create with this code
+
+my_meme <-image_read("https://cataas.com/cat") %>%
+  image_annotate("What you looking at?", 
+                 font="Impact", 
+                 size=100)%>%
+  image_scale(500)
+
+image_write(my_meme, "my_meme.png")
+
+```
+```{r}
+Sys.setenv(PEXELS_KEY = "lIAuQtsixxJfacvQSk45XhgymYu7lzIU7JrJQFxrKVP36TUdMNWOhi66")
+
+```
+```{r}
+key <- Sys.getenv("PEXELS_KEY")
+
+```
+```{r}
+library(httr)
+library(jsonlite)
+
+```
+```{r}
+key <- Sys.getenv("PEXELS_KEY")
+
+url <- "https://api.pexels.com/v1/search?query=cat&per_page=1"
+
+response <- GET(
+  url,
+  add_headers(Authorization = key)
+)
+
+data <- fromJSON(content(response, "text"))
+response$status_code
+key
+str(data)
+names(data)
+
+
+image_url <- data$photos$src$medium[1]
+image_url
+
+
+
+```
+```{r}
+library(magick)
+image_read(image_url)
+
+
+```
+```{r}
+url="https://smarty.online/scripts/s124/yden299
+image_read(url)
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+```{r}
+
+
+```
+
+
+
+
+
+
+
+
