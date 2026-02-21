@@ -9,4 +9,4 @@ This is my repo for STATS 220.
 - I am interested in learning about machine learning, AI, web data, and real-world data applications.
 ## 😺 A meme that represents my current study mood
 
-![](meme.png)
+![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
