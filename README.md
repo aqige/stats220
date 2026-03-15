@@ -8,12 +8,12 @@ This is my repo for STATS 220.
 - I am taking STATS 220 because I want to develop my skills in data science, programming, and modern data technologies.
 - I am interested in learning about  machine learning, AI, web data, and real-world data applications.
 ## two different types of bullet points (ordered and unordered)
-*unordered list-ou can use -, *, or +.
+* unordered list-ou can use -, *, or +.
     - Apple
     - Banana
     - Orange
       
-*ordered list
+* ordered list
     1. First step
     2. Second step
     3. Third step
