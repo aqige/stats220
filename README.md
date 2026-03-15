@@ -36,7 +36,8 @@ Use the `sum()` function in R to calculate the total.
 ### web link
 [Tom & jerry](https://www.youtube.com/watch?v=rYFgSBug-sk&t=26s)
 ### picture link
-![]https://autohelperbot.com/en/car/3C4NJCBB4MT597326_39089683)
+![](https://autohelperbot.com/en/car/3C4NJCBB4MT597326_39089683)
+![](https://justiceforcolombia.org/jep-peace-court-issues-first-sentences-over-human-rights-violations-during-armed-conflict/)
 
 ## A meme that captures how I currently feel about my university studies is<br>
 ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
