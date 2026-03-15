@@ -38,6 +38,7 @@ Use the `sum()` function in R to calculate the total.
 ### picture link
 
 ![](https://images-porsche.imgix.net/-/media/CD4764533C824EF4AFD953F2CA0537A9_4DF7E0D5F2F8424F8BA2FB06447A4EB4_CY24J5BIX0010-cayenne-side?w=1400&q=85&crop=faces%2Centropy%2Cedges&auto=format)
+
 ### gif link
 ![](https://cdn.dribbble.com/userupload/27068348/file/original-d9d2394c51d61256cc8a9d4aaab69aec.gif)
 
