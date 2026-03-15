@@ -30,7 +30,7 @@ Level 3
 ## bold, italics, inline cord test
 **bold**
 *italics*
-'1+1'
+`1+1`
 
 
 ## A meme that captures how I currently feel about my university studies is<br>
