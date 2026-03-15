@@ -33,7 +33,8 @@ Level 3
 Use the `sum()` function in R to calculate the total.
 
 ## link test
-![Tom & jerry](https://www.youtube.com/watch?v=rYFgSBug-sk&t=26s)
+### video link
+[Tom & jerry](https://www.youtube.com/watch?v=rYFgSBug-sk&t=26s)
 
 
 ## A meme that captures how I currently feel about my university studies is<br>
