@@ -10,8 +10,8 @@ This is my repo for STATS 220.
 ## two different types of bullet points (ordered and unordered)
 * unordered list-ou can use -, *, or +.
     - unorder item1
-    - unorder item1
-    - unorder item1
+    - unorder item2
+    - unorder item3
       
 * ordered list
     1. First item
