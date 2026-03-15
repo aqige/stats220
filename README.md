@@ -27,7 +27,7 @@ Level 3
 1. First item
 2. Second item
 3. Third item
-## bold, italics, inline cord test
+## bold, italics, inline code test
 **bold** <br>
 *italics* <br>
 Use the `sum()` function in R to calculate the total.
