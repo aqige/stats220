@@ -7,6 +7,15 @@ This is my repo for STATS 220.
 - I am undertaking a degree in  Computer Science and Statistics at the University of Auckland.
 - I am taking STATS 220 because I want to develop my skills in data science, programming, and modern data technologies.
 - I am interested in learning about  machine learning, AI, web data, and real-world data applications.
+##two different types of bullet points (ordered and unordered)
+*unordered list-ou can use -, *, or +.
+    - Apple
+    - Banana
+    - Orange
+*ordered list
+    1. First step
+    2. Second step
+    3. Third step
 
 ## A meme that captures how I currently feel about my university studies is<br>
 ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
