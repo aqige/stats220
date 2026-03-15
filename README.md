@@ -14,9 +14,9 @@ This is my repo for STATS 220.
     - unorder item3
       
 * ordered list
-    1. First item
-    2. Second item
-    3. Third item
+1. First item
+2. Second item
+3. Third item
 
 ## A meme that captures how I currently feel about my university studies is<br>
 ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
