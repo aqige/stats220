@@ -9,14 +9,14 @@ This is my repo for STATS 220.
 - I am interested in learning about  machine learning, AI, web data, and real-world data applications.
 ## two different types of bullet points (ordered and unordered)
 * unordered list-ou can use -, *, or +.
-    - Apple
-    - Banana
-    - Orange
+    - unorder item1
+    - unorder item1
+    - unorder item1
       
 * ordered list
-    1. First step
-    2. Second step
-    3. Third step
+    1. First item
+    2. Second item
+    3. Third item
 
 ## A meme that captures how I currently feel about my university studies is<br>
 ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
