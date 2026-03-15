@@ -27,6 +27,11 @@ Level 3
 1. First item
 2. Second item
 3. Third item
+## bold, italics, inline cord test
+**bold**
+*italics*
+'1+1'
+
 
 ## A meme that captures how I currently feel about my university studies is<br>
 ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
