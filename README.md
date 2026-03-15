@@ -28,9 +28,9 @@ Level 3
 2. Second item
 3. Third item
 ## bold, italics, inline cord test
-**bold**
-*italics*
-`1+1`
+**bold** <br>
+*italics* <br>
+Use the `sum()` function in R to calculate the total.
 
 
 ## A meme that captures how I currently feel about my university studies is<br>
