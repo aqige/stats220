@@ -12,6 +12,7 @@ This is my repo for STATS 220.
     - Apple
     - Banana
     - Orange
+      
 *ordered list
     1. First step
     2. Second step
