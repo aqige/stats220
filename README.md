@@ -11,7 +11,7 @@ This is my repo for STATS 220.
 ## A meme that captures how I currently feel about my university studies is<br>
 ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
 
-#Assignment 1
+# Assignment 1
 
 # Part A
 ## head level test
@@ -22,10 +22,10 @@ level 2:
 ## head
 
 ## two different types of bullet points (ordered and unordered)
-* unordered list-ou can use -, *, or +.
-- unorder item1
-- unorder item2
-- unorder item3
+* unordered list can use -, *, or +.
+- unorder item 1
+- unorder item 2
+- unorder item 3
       
 * ordered list
 1. First item
