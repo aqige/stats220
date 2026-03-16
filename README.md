@@ -50,17 +50,22 @@ Use the `sum()` function in R to calculate the total.
 ## Inspo meme
 
 Link to meme:
-https://instrumentationtools.com/press-machine-safety-control/
+https://www.easetext.com/assets/img/tutorial/jpg-to-text.jpg
 
 ### Meme image
 
-![inspo meme](inspo_meme.png)
+![inspo meme](inspo_meme.jpg)
 
 ### Meme design analysis
 
-This meme shows a press machine safety system with two buttons labelled LEFT and RIGHT. 
-The design presents two choices. The structure can be adapted to create humour by replacing the button labels with different options.
+My meme uses a two-part layout. The left side shows the original JPG image,
+while the right side shows the target output format after conversion.
+
+The design creates a clear visual comparison between the starting format and
+the converted result.
 
 ### Key components of the meme design include:
-- A central image with two buttons
-- Text labels identifying each button
+- A two-panel layout with a left side and a right side
+- An original JPG image shown on the left
+- A converted target format shown on the right
+- Text labels that explain the input and output formats
