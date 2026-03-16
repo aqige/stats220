@@ -47,4 +47,11 @@ Use the `sum()` function in R to calculate the total.
 ![](https://cdn.dribbble.com/userupload/27068348/file/original-d9d2394c51d61256cc8a9d4aaab69aec.gif)
 
 # Part B
+## Inspo meme
+
+Link to meme:
+https://instrumentationtools.com/press-machine-safety-control/
+
+This meme shows a press machine safety system with two buttons labelled LEFT and RIGHT. 
+The design presents two choices. The structure can be adapted to create humour by replacing the button labels with different options.
 
