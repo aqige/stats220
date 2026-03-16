@@ -52,6 +52,15 @@ Use the `sum()` function in R to calculate the total.
 Link to meme:
 https://instrumentationtools.com/press-machine-safety-control/
 
+### Meme image
+
+![inspo meme](inspo_meme.png)
+
+### Meme design analysis
+
 This meme shows a press machine safety system with two buttons labelled LEFT and RIGHT. 
 The design presents two choices. The structure can be adapted to create humour by replacing the button labels with different options.
 
+### Key components of the meme design include:
+- A central image with two buttons
+- Text labels identifying each button
