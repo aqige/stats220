@@ -48,17 +48,17 @@ latest_data <- logged_data %>%
 ```
 ## Summary of the data
 
-A total of r nrow(latest_data) fuel price records were collected.
+A total of `r nrow(latest_data)` fuel price records were collected.
 
-The average recorded fuel price is r round(mean(latest_data$price, na.rm = TRUE), 2) dollars per litre.
+The average recorded fuel price is `r round(mean(latest_data$price, na.rm = TRUE), 2)` dollars per litre.
 
-The minimum recorded fuel price is r round(min(latest_data$price, na.rm = TRUE), 2) dollars per litre.
+The minimum recorded fuel price is `r round(min(latest_data$price, na.rm = TRUE), 2)` dollars per litre.
 
-The maximum recorded fuel price is r round(max(latest_data$price, na.rm = TRUE), 2) dollars per litre.
+The maximum recorded fuel price is `r round(max(latest_data$price, na.rm = TRUE), 2)` dollars per litre.
 
-There are r length(unique(latest_data$station)) unique petrol stations in this dataset.
+There are `r length(unique(latest_data$station))` unique petrol stations in this dataset.
 
-The average recorded fuel price is `r round(mean(latest_data$price), 2)` !
+
 
 ## Average price by fuel type
 ```{r}
