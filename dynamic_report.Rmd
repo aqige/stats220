@@ -5,28 +5,114 @@ output: html_fragment
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
-
+suppressPackageStartupMessages(library(tidyverse))
 ```
 
 ```{css}
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
 
+h2 {
+  color: #1f4e79;
+}
+
+h3 {
+  color: #2e75b6;
+}
 ```
 
 ## What's going on with this data?
 
 ## Dynamic fuel price report
 
+
+
 ```{r}
-suppressPackageStartupMessages(library(tidyverse))
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQiIzzEa285Fm2_nqe2hwOgCXOI06EQZIuJOZ--NPF0py1zwvVpP-okzb3oqj50TRUJZizMq3IIpr1F/pub?gid=0&single=true&output=csv")
+
+latest_data <- logged_data %>%
+  rename(
+    record_date = date,
+    time_of_day = time_period,
+    fuel = fuel_type
+  )
+
 ```
+## Summary of the data
 
+A total of r nrow(latest_data) fuel price records were collected.
 
-```{r,, code=readLines("exploration.R")}
+The average recorded fuel price is r round(mean(latest_data$price, na.rm = TRUE), 2) dollars per litre.
 
+The minimum recorded fuel price is r round(min(latest_data$price, na.rm = TRUE), 2) dollars per litre.
 
-```
+The maximum recorded fuel price is r round(max(latest_data$price, na.rm = TRUE), 2) dollars per litre.
 
+There are r length(unique(latest_data$station)) unique petrol stations in this dataset.
 
 The average recorded fuel price is `r round(mean(latest_data$price), 2)` !
+
+## Average price by fuel type
+```{r}
+latest_data %>%
+  group_by(fuel) %>%
+  summarise(avg_price = mean(price, na.rm = TRUE)) %>%
+  ggplot(aes(x = fuel, y = avg_price)) +
+  geom_col() +
+  labs(
+    title = "Average Price by Fuel Type",
+    x = "Fuel Type",
+    y = "Average Price"
+  )
+
+```
+
+## Number of records by station
+```{r}
+latest_data %>%
+  count(station) %>%
+  ggplot(aes(x = station, y = n)) +
+  geom_col() +
+  labs(
+    title = "Number of Records by Station",
+    x = "Station",
+    y = "Count"
+  )
+
+```
+
+## Average price by station
+```{r}
+latest_data %>%
+  group_by(station) %>%
+  summarise(avg_price = mean(price, na.rm = TRUE)) %>%
+  ggplot(aes(x = station, y = avg_price)) +
+  geom_col() +
+  labs(
+    title = "Average Price by Station",
+    x = "Station",
+    y = "Average Price"
+  )
+
+```
+
+## Average price by time of day
+```{r}
+latest_data %>%
+  group_by(time_of_day) %>%
+  summarise(avg_price = mean(price, na.rm = TRUE)) %>%
+  ggplot(aes(x = time_of_day, y = avg_price)) +
+  geom_col() +
+  labs(
+    title = "Average Price by Time of Day",
+    x = "Time of Day",
+    y = "Average Price"
+  )
+
+```
 
 ![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
