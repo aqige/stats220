@@ -1,0 +1,32 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+```{css}
+
+```
+
+## What's going on with this data?
+
+## Dynamic fuel price report
+
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+```
+
+
+```{r,, code=readLines("exploration.R")}
+
+
+```
+
+
+The average recorded fuel price is `r round(mean(latest_data$price), 2)` !
+
+![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
