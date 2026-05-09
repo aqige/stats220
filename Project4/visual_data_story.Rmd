@@ -1,0 +1,111 @@
+---
+title: "Fuel Prices Across Auckland: A Visual Data Story"
+output: html_document
+---
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+```{js}
+$(function() {
+  $(".level2").css('visibility', 'hidden');
+  $(".level2").first().css('visibility', 'visible');
+  $(".container-fluid").height($(".container-fluid").height() + 300);
+  $(window).on('scroll', function() {
+    $('h2').each(function() {
+      var h2Top = $(this).offset().top - $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (h2Top >= 0 && h2Top <= windowHeight / 2) {
+        $(this).parent('div').css('visibility', 'visible');
+      } else if (h2Top > windowHeight / 2) {
+        $(this).parent('div').css('visibility', 'hidden');
+      }
+    });
+  });
+})
+```
+
+```{css echo=FALSE}
+body {
+  background-color: #f7fcfd;
+  color: #1b4332;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #2ca25f;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #238b45;
+  margin-top: 80px;
+}
+
+img {
+   border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figcaption {
+  display: none;
+}
+```
+
+## Why observe fuel prices?
+
+
+Fuel prices are an important part of everyday living costs in New Zealand. In this project, I used the Gaspy mobile app to observe and record the prices of 91 petrol, 95 petrol, and diesel across several Auckland areas.
+
+The data was collected during morning, afternoon, and evening observations. Additional area information was included in the Google Form to compare regional differences in fuel prices across Auckland.
+
+## Comparing the three fuel types
+
+
+![Average fuel price by fuel type](https://aqige.github.io/stats220/Project4/plot1.png)
+
+This visualisation compares the average observed fuel prices for the three fuel types. The results show that 95 petrol consistently remained more expensive than both 91 petrol and diesel.
+
+Using a bar chart makes it easier to compare the average prices between categories.
+
+
+## Fuel prices over time
+
+
+![Fuel prices recorded over time](https://aqige.github.io/stats220/Project4/plot2.png)
+
+This plot uses timestamps converted with the lubridate package to explore how fuel prices changed over time.
+
+Although the changes were relatively small, all three fuel types showed gradual increases during the observation period.
+
+## Regional differences across Auckland
+
+
+![Average fuel price by Auckland area](https://aqige.github.io/stats220/Project4/plot3.png)
+
+Area was added as an additional variable to compare regional fuel price differences.
+
+This visualisation suggests that average fuel prices varied slightly between Auckland areas, especially for 95 petrol.
+
+Grouped bar charts were used to allow comparisons between both fuel type and location simultaneously.
+
+## What does this data story show?
+
+This visual data story demonstrates how observational logging and data visualisation can be used to communicate real-world cost patterns.
+
+Using R, ggplot2, Google Forms, and GitHub Pages made it possible to transform simple observational data into a visual communication project that is both informative and visually consistent.
+
+
+
+
+
