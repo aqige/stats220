@@ -1,0 +1,79 @@
+---
+title: "Project 4"
+author: "Yifeng Deng"
+subtitle: "STATS 220 Semester One, 2026"
+output:
+  html_document:
+    code_folding: hide
+    self_contained: true
+date: "2026-05-10"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  error = FALSE
+)
+```
+
+## Introduction
+
+The focus of my observational logging project was monitoring fuel prices across Auckland using the Gaspy mobile application. I observed and recorded the prices of three commonly used fuel types: 91 petrol, 95 petrol, and diesel. Observations were collected during morning, afternoon, and evening periods over multiple days.
+
+For Project 4, I refined and reorganised my Google Form structure to improve the consistency of my observational logging data. I also added an Area variable to allow comparisons between different Auckland regions. This additional variable helped support more meaningful visualisations and comparisons within my visual data story.
+
+The observational logging workflow used for this project involved Google Forms, Google Sheets, published CSV files, R, ggplot2, and GitHub Pages. Using a published CSV link allowed my R code to directly access the latest observational data without relying on local files.
+
+All observational logging data for this project was collected by myself using the Gaspy app.
+
+When creating my data visualisations, I focused on variables that could help communicate meaningful differences in fuel prices. Fuel type was important because it allowed comparisons between 91 petrol, 95 petrol, and diesel prices. Timestamp data was useful for exploring how prices changed over time, while Area information supported comparisons between Auckland regions.
+
+Different chart types were selected depending on the type of comparison being communicated. Bar charts were used when comparing average prices between categories because they clearly display differences in magnitude. A time-based plot using timestamps was used to visualise how prices changed across the observation period. Grouped bar charts were used to compare both fuel type and Auckland area simultaneously.
+
+During the process of creating the visualisations, I experimented with several plotting approaches. Initially, I considered using more complex visual effects and additional external images. However, I found that simpler and cleaner visualisations communicated the fuel price patterns more effectively. I also adjusted the visual design to ensure the colour palette remained visually consistent throughout the project.
+
+This project improved my understanding of how data manipulation, data visualisation, and HTML-based communication can work together to create an informative visual story from observational logging data.
+
+
+## Visual data story
+
+My HTML visual data story can be accessed at the following GitHub Pages link:
+
+Visual Data Story Webpage:
+[Visual Data Story](https://aqige.github.io/stats220/Project4/visual_data_story.html)
+
+My visual data story demonstrates creativity by combining observational logging, data visualisation, CSS styling, progressive reveal webpage design, and GitHub Pages into a single visual communication project.
+
+Creativity in this project was demonstrated through the way the observational data was organised and presented visually rather than simply producing additional plots. I designed a consistent colour theme using the ColorBrewer palette and applied it across both the ggplot visualisations and the HTML visual story. This helped create a more visually unified and professional presentation.
+
+I also extended the original Project 2 observational logging structure by adding Area information to support regional comparisons across Auckland. This additional variable made it possible to create more meaningful visualisations and comparisons.
+
+The visual story structure was designed to guide readers progressively through the data, beginning with the purpose of the observations, followed by comparisons between fuel types, changes over time, and regional differences. The progressive reveal design included in the HTML page helped support this storytelling approach.
+
+Overall, the project demonstrates creativity by transforming observational logging data into a visually consistent and informative HTML-based data communication project.
+
+
+## Learning reflection
+
+One important idea I learned from Module 4 was that effective data visualisation is not only about creating graphs, but also about communicating meaning clearly to an audience. Before this module, I mainly focused on whether code worked correctly. However, during Project 4 I learned that design choices such as colour themes, chart types, labels, titles, and layout all affect how people interpret data.
+
+I also learned more about the grammar of graphics and how different geoms can be used for different communication purposes. For example, bar charts are useful for category comparisons, while time-based plots are useful for showing trends and changes over time.
+
+Another important thing I learned was the value of reproducible workflows. Using Google Forms, published CSV files, R scripts, and GitHub Pages together allowed me to build a workflow where the same code can recreate the same visualisations consistently.
+
+In the future, I am interested in exploring more advanced visual communication approaches, including interactive visualisations, web-based dashboards, and combining data visualisations with APIs and real-time data sources.
+
+
+## Appendix
+
+```{r file='data_visualisation.R', eval=FALSE, echo=TRUE}
+
+```
+```{r file='visual_data_story.Rmd', eval=FALSE, echo=TRUE}
+
+```
+
+
+
